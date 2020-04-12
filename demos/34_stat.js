@@ -10,4 +10,4 @@ fs.stat('./34_stat.js', (err, stats) => {
   console.log(stats.isDirectory());
 
   console.log(stats);
-})
+});

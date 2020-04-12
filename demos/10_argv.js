@@ -11,7 +11,7 @@ const { argv, argv0, execArgv, execPath } = process;
 console.log(argv);
 argv.forEach(item => {
   console.log(item);
-})
+});
 
 console.log(argv0);
 

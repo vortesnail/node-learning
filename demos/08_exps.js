@@ -12,4 +12,4 @@ module.exports = {
   a: 11,
   b: 22,
   test: 123
-}
+};

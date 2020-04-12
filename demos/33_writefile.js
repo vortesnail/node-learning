@@ -8,4 +8,4 @@ fs.writeFile('./text', content, {
   if (err) throw err;
 
   console.log('done!');
-})
+});

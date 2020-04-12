@@ -4,4 +4,4 @@ fs.mkdir('test', (err) => {
   if (err) throw err;
 
   console.log('done!');
-})
+});

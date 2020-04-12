@@ -15,4 +15,4 @@ const tid = setInterval(() => {
 
 ws.on('finish', () => {
   console.log('done!');
-})
+});

@@ -7,6 +7,6 @@ const result = fs.readFile('./06_fs.js', (err, data) => {
     // console.log(data);
     console.log(data.toString());
   }
-})
+});
 
 console.log(result);
