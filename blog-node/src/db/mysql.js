@@ -18,6 +18,7 @@ function exec (sql) {
       resolve(res);
     });
   });
+
   return promise;
 }
 
