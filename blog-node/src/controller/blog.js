@@ -68,10 +68,8 @@ const delBlog = (id, author) => {
     delete from blogs where id=${id} and author='${author}';
   `;
 
-  console.log(sql);
-
   return exec(sql).then(deleteData => {
-    console.log(deleteData);
+    // console.log(deleteData);
     if (deleteData.affectedRows > 0) {
       return true;
     }
