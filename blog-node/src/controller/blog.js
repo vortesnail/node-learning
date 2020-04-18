@@ -17,7 +17,6 @@ const getList = (author, keyword) => {
 
 const getDetail = (id) => {
   const sql = `select * from blogs where id='${id}'`;
-
   return exec(sql).then(rows => {
     return rows[0];
   });
@@ -32,7 +31,7 @@ const newBlog = (blogData = {}) => {
 
   const sql = `
     insert into blogs (title, content, author, createTime)
-    values ('${title}', '${content}', ${author}, '${createTime}');
+    values ('${title}', '${content}', '${author}', '${createTime}');
   `;
 
   return exec(sql).then(insertData => {
