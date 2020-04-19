@@ -1,4 +1,5 @@
 const { exec, escape } = require('../db/mysql');
+const xss = require('xss');
 
 const getList = (author, keyword) => {
   author = escape(author);
@@ -7,7 +8,6 @@ const getList = (author, keyword) => {
   if (author) {
     sql += `and author=${author} `;
   }
-  console.log(keyword);
   if (keyword) {
     sql += `and title like '%${keyword}%'`;
   }
@@ -27,7 +27,7 @@ const getDetail = (id) => {
 
 const newBlog = (blogData = {}) => {
   // blogData 是一个博客对象，包含 title、content 等
-  const title = escape(blogData.title);
+  const title = escape(xss(blogData.title));
   const content = escape(blogData.content);
   const author = escape(blogData.author);
   const createTime = Date.now();
@@ -48,7 +48,7 @@ const newBlog = (blogData = {}) => {
 const updateBlog = (id, blogData = {}) => {
   // id 为当前需要更新的博客 id
   // blogData 是一个博客对象，包含 title、content 等
-  const title = escape(blogData.title);
+  const title = escape(xss(blogData.title));
   const content = escape(blogData.content);
 
   const sql = `
