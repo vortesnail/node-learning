@@ -16,3 +16,40 @@ server {
     }
 }
 ```
+
+### http-server
+
+```bash
+> http-server -p 8001
+```
+
+### node
+
+```bash
+const http = require('http');
+
+const PORT = 8212;
+const serverHandle = require('../app');
+
+const server = http.createServer(serverHandle);
+server.listen(PORT);
+
+# node xx.js
+```
+
+### redis-server
+
+```bash
+> redis-server
+```
+
+### redis-cli
+
+```bash
+> redis-cli
+```
+
+### Intnet
+```bash
+http://localhost:7070/login
+```
