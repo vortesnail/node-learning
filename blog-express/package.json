@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "cross-env NODE_ENV=dev nodemon ./bin/www.js"
+    "dev": "cross-env NODE_ENV=development nodemon ./bin/www.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
