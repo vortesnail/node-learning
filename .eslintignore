@@ -1,4 +1,5 @@
 demos/
+basic-demos/
 node_modules/
 build/
 test/
