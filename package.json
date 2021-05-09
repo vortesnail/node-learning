@@ -25,7 +25,7 @@
   "homepage": "https://github.com/vortesnail/node-geek-time#readme",
   "dependencies": {
     "chalk": "^4.0.0",
-    "handlebars": "^4.7.6",
+    "handlebars": "^4.7.7",
     "koa": "^2.11.0",
     "koa-mount": "^4.0.0",
     "koa-static": "^5.0.0"
